@@ -7,16 +7,8 @@
 
 /* Propiedades compartidas */
 .container-header div {
-    height: 70px;
+    height: 60px;
     width: 50%;
-}
-
-/* Estilado de la parte izquierda de Header*/
-.header-left img {
-    width: 100%;
-    height: 100%;
-    max-width: 170px;
-    max-height: 78px;
 }
 
 /* Estilado de la parte derecha de Header */
@@ -55,6 +47,7 @@
     font-size: 14px;
 }
 
+/* Animacion NavBar */
 .header-right nav ul li a::after {
     content: '';
     width: 100%;
