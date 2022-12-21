@@ -1,15 +1,17 @@
 .container-header {
     display: flex;
     background-color: #824737;
-    align-items: center;
     max-height: 70px;
     padding: 0 24px 0 24px;
 }
 
-.header-left {
-    width:50%;
+/* Propiedades compartidas */
+.container-header div {
+    height: 70px;
+    width: 50%;
 }
 
+/* Estilado de la parte izquierda de Header*/
 .header-left img {
     width: 100%;
     height: 100%;
@@ -17,23 +19,63 @@
     max-height: 78px;
 }
 
+/* Estilado de la parte derecha de Header */
 .header-right {
-    padding-left: 3rem;
-    width: 50%;
+    padding-left: 48px;
+}
+
+.header-right nav {
+    width: 100%;
+    height: 100%;
 }
 
 .header-right nav ul {
     display: flex;
     justify-content: space-around;
+    height: 100%;
     width: 100%;
     margin: 0;
 }
 
+.header-right nav ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
 .header-right nav ul li a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px 0 15px;
     color: #F9EDCC;
-    font-weight: 600;
     font-size: 14px;
 }
+
+.header-right nav ul li a::after {
+    content: '';
+    width: 100%;
+    height: 20%;
+    top: 0;
+    position: absolute;
+    background-color: #F9EDCC;
+    opacity: 0;
+
+}
+
+.header-right nav ul li a:hover::after {
+    animation: lineNav 500ms linear forwards;
+}
+
+@keyframes lineNav {0% {opacity: 0;} 100% {opacity: 1;}}
+
+
+
+
+
 
 
 
