@@ -1,0 +1,37 @@
+.container-inicio {
+    padding: 50px 50px 0 0;
+    min-height: 80vh;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url("src/assets/HomeFondo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio-a {
+    color: #FFFFFF;
+    width: 27%;
+}
+
+.inicio-a-title h1 {
+    position: relative;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.inicio-a-title h1::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    top: 0;
+    width: 5px;
+    background-color: #196B3C;
+    left: -10px;
+}
+
+.inicio-a-parrafo p {
+    font-size: 24px;
+    font-weight: 100;
+}
+
+
