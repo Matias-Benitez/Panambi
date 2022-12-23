@@ -1,7 +1,6 @@
 import './navBar.css';
 import { NavItems } from "./NavItems.jsx";
 
-
 export const NavBar = () => {
     return (
         <header className="container-header">
