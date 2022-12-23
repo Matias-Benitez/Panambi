@@ -7,8 +7,13 @@
 
 /* Propiedades compartidas */
 .container-header div {
-    height: 60px;
+    height: 70px;
     width: 50%;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
 }
 
 /* Estilado de la parte derecha de Header */

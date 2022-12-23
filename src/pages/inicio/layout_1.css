@@ -1,6 +1,6 @@
-.container-inicio {
+.container-inicio-layout-1 {
     padding: 50px 50px 0 0;
-    min-height: 80vh;
+    height: 80vh;
     display: flex;
     justify-content: flex-end;
     background-image: url("src/assets/HomeFondo.png");
@@ -15,7 +15,7 @@
 
 .inicio-a-title h1 {
     position: relative;
-    font-size: 35px;
+    font-size: 48px;
     font-weight: 400;
 }
 
@@ -24,14 +24,25 @@
     content: '';
     height: 100%;
     top: 0;
-    width: 5px;
+    width: 8px;
     background-color: #196B3C;
-    left: -10px;
+    left: -15px;
 }
 
 .inicio-a-parrafo p {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 100;
+}
+
+.container-titulo-layout-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3A3A3A;
+    font-style: italic;
+    font-size: 32px;
+    display: flex;
+    height: 12vh;
 }
 
 

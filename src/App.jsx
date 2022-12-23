@@ -2,7 +2,7 @@ import './App.css'
 import {NavBar} from "./components/navBar/NavBar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navigate, Route, Routes} from "react-router-dom";
-import { Inicio, Consultorias, Nosotros, Talleres, Contacto } from "./pages/";
+import { InicioContainer, Consultorias, Nosotros, Talleres, Contacto } from "./pages/";
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
         <>
             <NavBar/>
             <Routes>
-                <Route path="/" element={<Inicio/>}></Route>
+                <Route path="/" element={<InicioContainer/>}></Route>
                 <Route path="/nosotros" element={<Nosotros/>}></Route>
                 <Route path="/consultoria" element={<Consultorias/>}></Route>
                 <Route path="/talleres" element={<Talleres/>}></Route>
