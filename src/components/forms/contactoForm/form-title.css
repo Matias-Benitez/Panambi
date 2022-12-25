@@ -1,0 +1,20 @@
+.form-title h2 {
+    position: relative;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.form-title h2::after {
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 100%;
+    left: -15px;
+    top: 0;
+    background-color: #196B3C;
+}
+
+.form-title p {
+    font-size: 32px;
+    font-weight: 400;
+}
