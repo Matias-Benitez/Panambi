@@ -35,13 +35,13 @@
 }
 
 .container-titulo-layout-1 {
+    background-color: #F5F5F5;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #3A3A3A;
     font-style: italic;
     font-size: 32px;
-    display: flex;
     height: 12vh;
 }
 
