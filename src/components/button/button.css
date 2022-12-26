@@ -1,0 +1,25 @@
+.boton {
+    color: #fff;
+    background-color: #9F1800;
+    height: 45px;
+    width: 180px;
+    text-transform:uppercase;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    font-size: 15px;
+    padding-bottom: 4px;
+    border-radius: 8px;
+    border-color: #9F1800;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    position: absolute;
+    bottom: 165px;
+    right: 300px;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1900px){
+    .boton{
+        position: absolute;
+        bottom: -50px;
+        right: 50px;
+    }
+}

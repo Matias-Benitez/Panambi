@@ -1,0 +1,50 @@
+.consultoria {
+    padding-bottom: 80px;
+}
+.container-consultoria {
+    margin: 50px auto;
+}
+.consultoria-titulo {
+    font-size: 48px;
+    font-weight: 400;
+    text-transform:uppercase;
+    margin: 20px 0;
+}
+.consultoria-subtitulo {
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.line-consultoria {
+    position: relative;
+    font-weight: normal;
+}
+.line-consultoria::after {
+    position: absolute;
+    content: '';
+    width: 12%;
+    height: 7px;
+    right: 920px;
+    background-color: #9F1800;
+    bottom: -5px;
+}
+.links-consultoria a li{
+    height: 65px;
+    background-color: #F9EDCC;
+    margin: 15px 0px;
+    border-radius: 15px;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: black;
+}
+.lista-consultoria{
+    margin-top: 30px;
+}
+.lista-consultoria li{
+    margin-top: 15px;
+    list-style-type: disc;
+}

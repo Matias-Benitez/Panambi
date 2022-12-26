@@ -1,0 +1,36 @@
+.container-nosotros {
+    margin: 50px auto;
+}
+.nosotros-titulo {
+    font-size: 48px;
+    font-weight: 400;
+    text-transform:uppercase;
+    margin: 40px 0;
+}
+
+.line-nosotros {
+    position: relative;
+    font-weight: normal;
+}
+
+.line-nosotros::after {
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 7px;
+    right: 1000px;
+    background-color: #9F1800;
+    bottom: -5px;
+}
+
+.nosotros-parrafo {
+    font-weight: 400;
+    position: relative;
+    font-size: 20px;
+}
+.nosotros-parrafo span{
+    font-weight: bold;
+}
+.nosotros-parrafo-descripcion {
+    padding-left: 30px;
+}
