@@ -14,11 +14,11 @@ export const Consultorias = () => {
                     <div className="row">
                         <div className="col-3">
                             <ul className="links-consultoria">
-                                <a href=""><li className="">Consultoría integral de gestión y administración</li></a>
-                                <a href=""><li className="">Consultoría de RSE</li></a>
-                                <a href=""><li className="">Consultoría ambiental</li></a>
-                                <a href=""><li className="">Consultoría de Marketing digital</li></a>
-                                <a href=""><li className="">Consultoría de RRHH</li></a>
+                                <li className="">Consultoría integral de gestión y administración</li>
+                                <li className="">Consultoría de RSE</li>
+                                <li className="">Consultoría ambiental</li>
+                                <li className="">Consultoría de Marketing digital</li>
+                                <li className="">Consultoría de RRHH</li>
                             </ul>
                         </div>
                         <div className="col-9">

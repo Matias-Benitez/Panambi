@@ -34,3 +34,11 @@
 .nosotros-parrafo-descripcion {
     padding-left: 30px;
 }
+.nosotros-linkedin{
+    height: 40px;
+    padding-right: 10px;
+}
+.nosotros-linkedin-text {
+    font-size: 20px;
+    font-weight: 500;
+}

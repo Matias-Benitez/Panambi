@@ -28,7 +28,7 @@
     background-color: #9F1800;
     bottom: -5px;
 }
-.links-consultoria a li{
+.links-consultoria li{
     height: 65px;
     background-color: #F9EDCC;
     margin: 15px 0px;
@@ -40,6 +40,12 @@
     padding: 0px 20px;
     text-decoration: none;
     color: black;
+    cursor: pointer;
+}
+.links-consultoria li:hover{
+    background-color: #9F1800;
+    color: #F9EDCC;
+    transition: all .3s ease;
 }
 .lista-consultoria{
     margin-top: 30px;
@@ -48,3 +54,4 @@
     margin-top: 15px;
     list-style-type: disc;
 }
+

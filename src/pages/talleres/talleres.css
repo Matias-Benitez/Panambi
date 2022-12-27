@@ -40,6 +40,12 @@
     padding: 0px 10px;
     text-decoration: none;
     color: black;
+    cursor: pointer;
+}
+.links-taller li:hover{
+    background-color: #9F1800;
+    color: #F9EDCC;
+    transition: all .3s ease;
 }
 .lista-taller{
     margin-top: 30px;
@@ -55,6 +61,7 @@
 }
 .lista-taller li span{
     font-weight: bold;    
+    font-size: 15px;
 }
 .boton-taller {
     position: absolute;
