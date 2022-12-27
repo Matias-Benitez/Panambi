@@ -1,7 +1,7 @@
 import {FormContacto} from "./FormContacto";
 import {FormTitle} from "./FormTitle.jsx";
 import {useForm} from "../../../hooks/useForm.js";
-import {RedesContacto} from "./RedesContacto";
+import {RedesContacto} from "../redes-contacto/RedesContacto.jsx";
 
 export const FormContactoContainer = () => {
     const {onInputChange, formState} = useForm();

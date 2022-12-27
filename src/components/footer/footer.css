@@ -1,0 +1,14 @@
+.footer {
+    background-color: #824737;
+    height: 98px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    font-size: 12px;
+}
+
+.footer p span {
+    font-weight: bold;
+}

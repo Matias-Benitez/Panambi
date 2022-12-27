@@ -3,6 +3,7 @@ import {NavBar} from "./components/navBar/NavBar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navigate, Route, Routes} from "react-router-dom";
 import { InicioContainer, Consultorias, Nosotros, Talleres, Contacto } from "./pages/";
+import {Footer} from "./components/footer/Footer";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
                 <Route path="/contacto" element={<Contacto/>}></Route>
                 <Route path="*" element={<Navigate to="/"/>}></Route>
             </Routes>
+            <Footer/>
         </>
     )
 }
