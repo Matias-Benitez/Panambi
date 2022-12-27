@@ -19,9 +19,9 @@ export const RedesContacto = () => {
                 <span>en las redes!</span></p>
             </div>
             <div className="redes-sociales">
-                <img src="src/assets/LinkedIn.png" alt="Linkedin"/>
-                <img src="src/assets/instagram 1.png" alt="Instagram"/>
-                <img src="src/assets/LogoWP.png" alt="WhatsApp"/>
+                <a target="_blank" href="https://www.linkedin.com/in/panambi-consultor%C3%ADa-de-empresas/"><img src="src/assets/LinkedIn.png" alt="Linkedin"/></a>
+                <a target="_blank" href="https://www.instagram.com/panambi.consultoriasustentable/"><img src="src/assets/instagram 1.png" alt="Instagram"/></a>
+                <a target="_blank"  href="https://wa.link/m7r6zx"><img src="src/assets/LogoWP.png" alt="WhatsApp"/></a>
             </div>
         </div>
     )

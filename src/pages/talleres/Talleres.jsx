@@ -14,10 +14,10 @@ export const Talleres = () => {
                     <div className="row">
                         <div className="col-3">
                             <ul className="links-taller">
-                                <a href=""><li className="">Modelo de negocios CANVAS</li></a>
-                                <a href=""><li className="">Excel para principiantes</li></a>
-                                <a href=""><li className="">Formación ambiental para Agentes Municipales</li></a>
-                                <a href=""><li className="">Introducción al Cambio Climático</li></a>
+                                <a href="#"><li className="">Modelo de negocios CANVAS</li></a>
+                                <a href="#"><li className="">Excel para principiantes</li></a>
+                                <a href="#"><li className="">Formación ambiental para Agentes Municipales</li></a>
+                                <a href="#"><li className="">Introducción al Cambio Climático</li></a>
                             </ul>
                         </div>
                         <div className="col-9">
