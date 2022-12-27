@@ -1,0 +1,29 @@
+.redes-contacto-container {
+    border: 1px solid white;
+    margin: 60px 0 0 64px;
+    padding: 40px 40px 0 40px;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.redes-contacto-container .logos {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    font-size: 20px;
+}
+
+.redes-contacto-container div p {
+    padding-top: 12px;
+    padding-left: 1rem;
+}
+
+.redes-contacto-container div p span {
+    padding-left: 2rem;
+    display: block;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,6 +1,6 @@
 import {FormSuscripcion} from "./suscripcionForm/FormSuscripcion.jsx";
 import {useState} from "react";
-import {ContactoContainer} from "./contactoForm/ContactoContainer.jsx";
+import {FormContactoContainer} from "./contactoForm/FormContactoContainer.jsx";
 
 export const FormContainer = () => {
     const [suscrito, setSuscrito] = useState(false)
@@ -11,7 +11,7 @@ export const FormContainer = () => {
     return (
         <>
             <FormSuscripcion suscrito={suscrito} suscribirse={suscribirse}/>
-            <ContactoContainer/>
+            <FormContactoContainer/>
         </>
     )
 }
