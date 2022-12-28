@@ -13,12 +13,14 @@ export const Nosotros = () => {
             </div>
             <div className="container container-nosotros">
                 <div className="row align-items-center">
-                    <div className="col-2">
+                    <div className="col-xxl-2 align-self-center">
                     <img src={Daniela} alt="Imágen Daniela Milén Juárez" />
                     </div>
-                    <div className="col-9 nosotros-parrafo-descripcion">
-                        <h3>Daniela Milén Júarez</h3>
-                        <p className="nosotros-parrafo"><span>Fundadora: Licenciada en Administración de empresas</span></p>
+                    <div className="col-xxl-9 nosotros-parrafo-descripcion">
+                        <div>
+                            <h3>Daniela Milén Júarez</h3>
+                            <p className="nosotros-parrafo"><span>Fundadora: Licenciada en Administración de empresas</span></p>
+                        </div>
                         <p className="nosotros-parrafo">Licenciada en Administración de empresas con larga experiencia tanto en empresas multinacionales como empresas regionales, interesada principalmente acompañar a Pymes y emprendimientos en la evolución de sus negocios de manera responsable. “Amante del planeta en que vivimos, deseo contribuir a generar negocios de impacto positivo.”</p>
                         <a href="https://www.linkedin.com/in/daniela-mil%C3%A9n-ju%C3%A1rez-767bb341/" target="_blank"><img className="nosotros-linkedin" src={Linkedin} alt="" /><span className="nosotros-linkedin-text">Visitar perfil de LinkedIn</span></a>
                     </div>
@@ -26,7 +28,7 @@ export const Nosotros = () => {
             </div>
             <div className="container container-nosotros">
                 <div className="row align-items-center">
-                    <div className="col-9 nosotros-parrafo-descripcion">
+                    <div className="col-xxl-9 nosotros-parrafo-descripcion">
                         <h3>Federico Ezequiel Parrilli</h3>
                         <p className="nosotros-parrafo"><span>Licenciado en Gestión Ambiental</span></p>
                         <p className="nosotros-parrafo"> Licenciado en Gestión Ambiental con experiencia en el sector público y privado. Investigador independiente y divulgador ambiental fundador del Proyecto Carnívoras Argentina. “La gestión ambiental ya no es un lujo, sino una necesidad para nuestro desarrollo.”</p>
@@ -37,7 +39,7 @@ export const Nosotros = () => {
                     </div>
                 </div>
             </div>
-            <FormContainer />
+            {/* <FormContainer /> */}
         </section>
     )
 }

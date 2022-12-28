@@ -29,7 +29,7 @@ export const Consultorias = () => {
                 </div>
                 <div className="container container-consultoria">
                     <div className="row">
-                        <div className="col-3">
+                        <div className="col-4">
                             <ul className="links-consultoria">
                                 <li id={consultoriaIntegralStyle} onClick={consultoriaIntegralSelected}>Consultoría
                                     integral de gestión y administración
@@ -40,7 +40,7 @@ export const Consultorias = () => {
                                 <li id={consultoriaRecursosHumanosStyle} onClick={consultoriaRecursosHumanosSelected}>Consultoría de RRHH</li>
                             </ul>
                         </div>
-                        <div className="col-9">
+                        <div className="col-8">
                             <ConsultoriasDynamic items={returnItems()}/>
                             <Button/>
                         </div>

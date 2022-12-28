@@ -8,7 +8,7 @@
     font-size: 48px;
     font-weight: 400;
     text-transform:uppercase;
-    margin: 15px 0;
+    margin: 20px 0;
 }
 .taller-subtitulo {
     font-size: 25px;
@@ -28,8 +28,8 @@
     background-color: #9F1800;
     bottom: -5px;
 }
-.links-taller a li{
-    height: 65px;
+.links-taller li{
+    height: 75px;
     background-color: #F9EDCC;
     margin: 15px 0px;
     border-radius: 15px;
@@ -42,36 +42,34 @@
     color: black;
     cursor: pointer;
 }
-.links-taller li:hover{
-    background-color: #9F1800;
-    color: #F9EDCC;
-    transition: all .3s ease;
-}
-.lista-taller{
-    margin-top: 30px;
-}
+
 .lista-taller li{
-    margin-top: 15px;  
-    font-size: 17px;   
+    margin-top: 15px;
+    height: 80px;
 }
-.lista-taller li i{
-    padding-right: 12px;
-    font-weight: bold;
-    font-size: 20px; 
+.row i {
+    display: grid;
+    align-items: center;
 }
-.lista-taller li span{
-    font-weight: bold;    
-    font-size: 15px;
+.icono {
+    display: grid;
+    align-items:flex-start;
+    padding-top: 20px;
 }
+.icono3 {
+    display: grid;
+    align-items:flex-start;
+}
+
 .boton-taller {
     position: absolute;
-    bottom: 165px;
-    right: 300px;
+    bottom: -50px;
+    right: 0px;
 }
 @media only screen and (min-width: 1024px) and (max-width: 1900px){
     .boton-taller{
         position: absolute;
-        bottom: 70px;
-        right: 200px;
+        bottom: 0px;
+        right: 0px;
     }
 }

@@ -1,6 +1,7 @@
 .boton {
-    color: #fff;
-    background-color: #9F1800;
+    color: black;
+    font-weight: 600;
+    background-color: #F9EDCC;
     height: 45px;
     width: 180px;
     text-transform:uppercase;
@@ -20,10 +21,12 @@
     .boton{
         position: absolute;
         bottom: -50px;
-        right: 50px;
+        right: 110px;
     }
 }
 .boton:hover{
-    transform: scale(1.1);
-    transition: all .3s ease;
+    background-color: #9F1800;
+    border-color: #9F1800;
+    color: #fff;
+    transition: all .3s;
 }

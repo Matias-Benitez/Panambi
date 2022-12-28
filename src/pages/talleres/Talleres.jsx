@@ -1,8 +1,23 @@
 import {FormContainer} from "../../components/forms/FormContainer.jsx";
 import {Button} from "../../components/button/Button.jsx";
 import './talleres.css'
+import {TalleresDynamic} from "./TalleresDynamic.jsx";
+import {useTalleres} from '../../hooks/useTalleres.js';
+
 
 export const Talleres = () => {
+    const {
+        tallerCanvasSelected,
+        tallerExcelSelected,
+        tallerAmbientalSelected,
+        tallerCambioClimaticoSelected,
+        returnItems,
+        tallerCanvasStyle,
+        tallerExcelStyle,
+        tallerAmbientalStyle,
+        tallerCambioClimaticoStyle
+    } = useTalleres()
+
     return (
         <section>
             <div className="taller">
@@ -12,24 +27,18 @@ export const Talleres = () => {
                 </div>
                 <div className="container container-taller">
                     <div className="row">
-                        <div className="col-3">
+                        <div className="col-4">
                             <ul className="links-taller">
-                                <a href="#"><li className="">Modelo de negocios CANVAS</li></a>
-                                <a href="#"><li className="">Excel para principiantes</li></a>
-                                <a href="#"><li className="">Formación ambiental para Agentes Municipales</li></a>
-                                <a href="#"><li className="">Introducción al Cambio Climático</li></a>
+                                <li id={tallerCanvasStyle} onClick={tallerCanvasSelected}>Taller: Modelo de negocios CANVAS.</li>
+                                <li id={tallerExcelStyle} onClick={tallerExcelSelected}>Excel para principiantes</li>
+                                <li id={tallerAmbientalStyle} onClick={tallerAmbientalSelected}>Formación ambiental para Agentes Municipales</li>
+                                <li id={tallerCambioClimaticoStyle} onClick={tallerCambioClimaticoSelected}>Introducción al Cambio Climático</li>
                             </ul>
                         </div>
-                        <div className="col-9">
-                            <h3 className="taller-subtitulo">Taller: Modelo de negocios CANVAS.</h3>
-                            <ul className="lista-taller">
-                                <li><i class="fa-solid fa-check"></i><span>OBJETIVO:</span> Revisar los conceptos para identificar los aspectos claves de un negocio, la propuesta de valor, comprender quienes son sus clientes, competidores, y demás aspectos para observarlos de una manera clara y simple que contribuya a la toma de decisiones en búsqueda de alcanzar el éxito.</li>
-                                <li><i class="fa-solid fa-list"></i><span>REQUISITOS:</span> No se requieren conocimientos previos. Este taller está orientado a todos aquellos que estén iniciando sus primeros emprendimientos, o a quienes ya se hayan animado a emprender y necesiten redefinir su modelo de negocio.</li>
-                                <li><i class="fa-solid fa-hourglass-start"></i><span>DURACIÓN:</span> 2 horas.</li>
-                                <li><i class="fa-solid fa-display"></i><span>MODALIDAD:</span> Virtual y/o presencial.</li>
-                            </ul>
-                            <Button/>
+                        <div className="col-8">
+                            <TalleresDynamic items={returnItems()}/>
                         </div>
+                        <div className="boton-taller"><Button/></div>
                     </div>
                 </div>
             </div>
