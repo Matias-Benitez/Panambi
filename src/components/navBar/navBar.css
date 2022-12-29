@@ -1,23 +1,25 @@
 .container-header {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     background-color: #824737;
     max-height: 70px;
-    padding: 0 24px 0 24px;
+    padding: 0 1.5% 0 1.5%;
 }
 
 /* Propiedades compartidas */
 .container-header div {
     height: 70px;
-    width: 50%;
 }
 
 .header-left {
+    grid-column: 1 / 6;
     display: flex;
     align-items: center;
 }
 
 /* Estilado de la parte derecha de Header */
 .header-right {
+    grid-column: 6 / 13;
     padding-left: 48px;
 }
 
@@ -30,7 +32,6 @@
     display: flex;
     justify-content: space-around;
     height: 100%;
-    width: 100%;
     margin: 0;
 }
 
@@ -38,7 +39,6 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: 100%;
 }
 
 .header-right nav ul li a {
@@ -47,7 +47,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 0 10px 0 15px;
     color: #F9EDCC;
     font-size: 14px;
 }
@@ -69,6 +68,86 @@
 }
 
 @keyframes lineNav {0% {opacity: 0;} 100% {opacity: 1;}}
+
+.menu-hamburguesa {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    /* Propiedades compartidas */
+    .container-header div {
+        height: 70px;
+    }
+
+    .header-left {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Estilado de la parte derecha de Header */
+    .header-right {
+        padding: 0;
+    }
+
+    .header-right nav {
+        position: fixed;
+        width: 35%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-color: grey;
+    }
+
+    .header-right nav ul {
+        width: 35vw;
+        background-color: grey;
+        display: flex;
+        height: 50%;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    .header-right nav ul li {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-right nav ul li a {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /*color: #F9EDCC;*/
+        font-size: 14px;
+        color: red;
+    }
+
+    /* Animacion NavBar */
+    .header-right nav ul li a::after {
+        content: '';
+        width: 100%;
+        height: 20%;
+        top: 0;
+        position: absolute;
+        background-color: #F9EDCC;
+        opacity: 0;
+
+    }
+
+    .header-right nav ul li a:hover::after {
+        animation: lineNav 500ms linear forwards;
+    }
+
+    @keyframes lineNav {0% {opacity: 0;} 100% {opacity: 1;}}
+
+    .menu-hamburguesa {
+        display: none;
+    }
+
+}
 
 
 
