@@ -24,12 +24,11 @@ export const Consultorias = () => {
             <div className="consultoria">
                 <div className="container container-consultoria">
                     <h2 className="consultoria-titulo line-consultoria">Consultorías</h2>
-                    <h3 className="consultoria-subtitulo">Asesoramiento y acompañamiento profesional en el desarrollo de
-                        tu negocio.</h3>
+                    <h3 className="consultoria-subtitulo">Ofrecemos asesoramiento y acompañamiento profesional en el desarrollo de tu negocio.</h3>
                 </div>
                 <div className="container container-consultoria">
                     <div className="row">
-                        <div className="col-4">
+                        <div className="col-xxl-4">
                             <ul className="links-consultoria">
                                 <li id={consultoriaIntegralStyle} onClick={consultoriaIntegralSelected}>Consultoría
                                     integral de gestión y administración
@@ -40,7 +39,7 @@ export const Consultorias = () => {
                                 <li id={consultoriaRecursosHumanosStyle} onClick={consultoriaRecursosHumanosSelected}>Consultoría de RRHH</li>
                             </ul>
                         </div>
-                        <div className="col-8">
+                        <div className="col-xxl-8">
                             <ConsultoriasDynamic items={returnItems()}/>
                             <Button/>
                         </div>

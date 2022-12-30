@@ -66,6 +66,21 @@
     bottom: -50px;
     right: 0px;
 }
+
+@media screen and (max-width: 1400px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 576px) {
+    
+}
+
+
+
 @media only screen and (min-width: 1024px) and (max-width: 1900px){
     .boton-taller{
         position: absolute;

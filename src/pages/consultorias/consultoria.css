@@ -7,7 +7,6 @@
 .consultoria-titulo {
     font-size: 48px;
     font-weight: 400;
-    text-transform:uppercase;
     margin: 20px 0;
 }
 .consultoria-subtitulo {
@@ -55,4 +54,38 @@
     transition: 200ms;
     background-color: #9F1800;
     color: #F9EDCC;
+}
+
+@media screen and (max-width: 1400px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 576px) {
+    
+}
+
+
+@media only screen and (max-width: 650px){
+    .consultoria-titulo {
+        font-size: 28px;
+        margin: 40px 0;
+    }
+    .line-consultoria::after {
+        width: 40%;
+        left: 40px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1900px){
+    .consultoria-titulo {
+        text-transform:uppercase;
+    }
+}
+@media only screen and (min-width: 651px) and (max-width: 1924px){
+    .consultoria-titulo {
+        text-transform:uppercase;
+    }
 }
