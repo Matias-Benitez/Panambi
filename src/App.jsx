@@ -10,15 +10,15 @@ function App() {
     return (
         <>
             <NavBar/>
-            {/*<Routes>*/}
-            {/*    <Route path="/" element={<InicioContainer/>}></Route>*/}
-            {/*    <Route path="/nosotros" element={<Nosotros/>}></Route>*/}
-            {/*    <Route path="/consultoria" element={<Consultorias/>}></Route>*/}
-            {/*    <Route path="/talleres" element={<Talleres/>}></Route>*/}
-            {/*    <Route path="/contacto" element={<Contacto/>}></Route>*/}
-            {/*    <Route path="*" element={<Navigate to="/"/>}></Route>*/}
-            {/*</Routes>*/}
-            {/*<Footer/>*/}
+            <Routes>
+                <Route path="/" element={<InicioContainer/>}></Route>
+                <Route path="/nosotros" element={<Nosotros/>}></Route>
+                <Route path="/consultoria" element={<Consultorias/>}></Route>
+                <Route path="/talleres" element={<Talleres/>}></Route>
+                <Route path="/contacto" element={<Contacto/>}></Route>
+                <Route path="*" element={<Navigate to="/"/>}></Route>
+            </Routes>
+            <Footer/>
         </>
     )
 }

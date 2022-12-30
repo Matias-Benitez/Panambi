@@ -5,7 +5,8 @@ export const InicioLayout_1 = () => {
         <>
             <section className="container-inicio-layout-1">
                 <div className="inicio-a">
-                    <div className="inicio-a-title"><h1>Somos Panambí</h1></div>
+                    <div className="inicio-a-title">
+                        <h1>Somos Panambí</h1></div>
                     <div className="inicio-a-parrafo">
                         <p>Contribuimos a construir organizaciones eficientes que generen un impacto positivo, integrando las variables sociales y ambientales en sus modelos de negocios.
                         </p>

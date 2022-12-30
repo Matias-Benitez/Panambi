@@ -62,4 +62,47 @@
     justify-content: space-around;
 }
 
+@media screen and (max-width: 1400px) {
+    .container-inicio-layout-2 {
+        padding-top: 50px;
+    }
+}
 
+@media screen and (max-width: 576px) {
+    .servicios {
+        width: 80%;
+    }
+
+    .cardService-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .servicios-titulo h2 {
+        font-size: 20px;
+    }
+
+    .servicios-parrafo {
+        font-size: 16px;
+    }
+
+    #line-parrafo {
+        position: relative;
+        font-weight: normal;
+    }
+
+    #line-parrafo::after {
+        position: absolute;
+        content: '';
+        width: 80%;
+        height: 7px;
+        right: -15px;
+        background-color: #196B3C;
+        bottom: -15px;
+    }
+
+    .servicios-parrafo span {
+        font-weight: bold;
+    }
+}

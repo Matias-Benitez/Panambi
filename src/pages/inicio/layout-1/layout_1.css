@@ -31,7 +31,7 @@
 
 .inicio-a-parrafo p {
     font-size: 32px;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .container-titulo-layout-1 {
@@ -43,6 +43,85 @@
     font-style: italic;
     font-size: 32px;
     height: 12vh;
+}
+
+.container-titulo-layout-1 h2 {
+   text-align: center;
+}
+
+@media screen and (max-width: 1400px) {
+    .inicio-a {
+        width: 40%;
+    }
+
+    .inicio-a-title h1 {
+        font-size: 32px;
+    }
+
+    .inicio-a-parrafo p {
+        font-size: 28px;
+    }
+
+    .container-titulo-layout-1 {
+        background-color: #F5F5F5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #3A3A3A;
+        font-style: italic;
+        font-size: 32px;
+        height: 12vh;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container-inicio-layout-1 {
+        padding-top: 4rem;
+        height: 45vh;
+        justify-content: center;
+    }
+
+    .inicio-a {
+        width: 70%;
+    }
+
+    .inicio-a-parrafo p {
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container-inicio-layout-1 {
+        padding: 0;
+        height: 45vh;
+        margin: auto;
+        align-items: center;
+    }
+
+    .inicio-a {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 2rem 1rem 0 1em;
+    }
+
+    .inicio-a-title h1 {
+        font-size: 34px;
+        font-weight: 400;
+    }
+
+    .inicio-a-parrafo p {
+        margin-top: 1rem;
+        font-size: 16px;
+    }
+
+    .container-titulo-layout-1 h2 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+
 }
 
 
