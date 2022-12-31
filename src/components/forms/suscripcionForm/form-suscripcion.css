@@ -9,13 +9,8 @@
     color: #FFFFFF;
 }
 
-.suscripcion-container h2 {
-    font-size: 32px;
-    font-weight: 400;
-}
-
-.suscripcion-subcontainer {
-    width: fit-content;
+.suscripcion-subcontainer h3 {
+    font-size: 20px;
 }
 
 .form-suscripcion input {
@@ -45,5 +40,51 @@
 .suscripcion-container p {
     font-size: 20px;
     font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+    .suscripcion-container {
+        padding: 0 3rem 0 3rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .suscripcion-container {
+        background-color: #824737;
+    }
+    .form-suscripcion {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-suscripcion input {
+        border-radius: 7px;
+        width: 100%;
+    }
+
+    .suscripcion-subcontainer h3 {
+        font-size: 20px;
+        color: #FFFFFF;
+        font-weight: 400;
+        line-height: 27px;
+    }
+
+    .suscripcion-subcontainer span {
+        display: block;
+        font-weight: 700;
+    }
+
+    .form-suscripcion button {
+        margin-top: 1rem;
+        color: #FFFFFF;
+        border-radius: 7px;
+        height: 36px;
+        width: 100%;
+    }
+
+    .suscripcion-container p {
+        font-size: 20px;
+        font-weight: 600;
+    }
 }
 

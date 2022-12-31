@@ -1,11 +1,21 @@
 .container-forms {
-    height: 80vh;
-    padding: 70px 200px 0 200px;
     background-color: #EBD9B6;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-contacto {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
 }
 
 .form-contacto-container {
+    margin: 0 1rem 0 0;
     width: 60%;
+    min-width: fit-content;
 }
 
 .inputs-form {
@@ -39,7 +49,7 @@
 }
 
 .contacto-redes {
-    width: 50%;
+    width: 40%;
 }
 
 .form-contacto-container button {
@@ -57,4 +67,51 @@
     display: flex;
     width: 100%;
 }
+
+@media screen and (max-width: 1400px) {
+    .form-contacto {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .form-contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-contacto-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .form-contacto {
+        width: 100%;
+    }
+
+    .inputs-form input {
+        border-bottom: 1px solid black;
+        border-radius: 3px;
+    }
+
+    .inputs-form textarea {
+        border-bottom: 1px solid black;
+        border-radius: 3px;
+    }
+
+    .inputs-form label {
+        display: none;
+    }
+
+    .form-contacto-container button {
+        height: 36px;
+        border-radius: 5px;
+    }
+
+    .form-contacto-container {
+        margin: 0;
+    }
+}
+
 

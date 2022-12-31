@@ -4,17 +4,17 @@
     justify-content: center;
     background-color: #EBD9B6;
     margin: 2rem 2rem 0 2rem;
-    padding: 0 0 2rem;
 }
 
 .container-unete div {
+    text-align: center;
     padding-top: 2rem;
     border-top: 4px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 100%;
 }
 
 .unete-primero {
@@ -30,4 +30,26 @@
 
 .unete-segundo span {
     color: #196B3C;
+}
+
+@media screen and (max-width: 992px){
+    .container-unete {
+       margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container-unete p {
+        font-size: 16px;
+    }
+
+    .container-unete div {
+        text-align: center;
+        padding-top: 0;
+        border-top: 2px solid #824737;
+    }
+
+    .container-unete {
+        height: 100px;
+    }
 }

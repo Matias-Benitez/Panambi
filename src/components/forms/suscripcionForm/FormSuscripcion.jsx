@@ -8,7 +8,7 @@ export const FormSuscripcion = ({suscrito, suscribirse}) => {
     return (
         <section className="suscripcion-container">
             <div className="suscripcion-subcontainer">
-                <h3>Suscribite a nuestra cartelera de anuncios ¡Enterate de todas las novedades!</h3>
+                <h3>Ingresá tu email y enterate de todas las novedades. <span>¡Estemos en contacto!</span></h3>
                 <form className="form-suscripcion" onSubmit={(e) => suscribirse(e, suscripcion)}>
                     <label htmlFor="suscripcion"></label>
                     <input onChange={onInputChange} name="suscripcion" type="email" id="suscripcion"
