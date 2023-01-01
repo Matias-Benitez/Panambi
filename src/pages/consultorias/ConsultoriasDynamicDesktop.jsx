@@ -1,4 +1,4 @@
-export const ConsultoriasDynamic = ({items}) => {
+export const ConsultoriasDynamicDesktop = ({items}) => {
     return (
         <>
             <h3 className="consultoria-subtitulo">{items[0].title}</h3>

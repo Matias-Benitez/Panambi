@@ -50,6 +50,7 @@
 
 @media screen and (max-width: 576px) {
     .suscripcion-container {
+        margin-top: 1rem;
         background-color: #824737;
     }
     .form-suscripcion {

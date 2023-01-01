@@ -14,16 +14,22 @@
     font-weight: 400;
     margin-top: 10px;
 }
+
+.div-line {
+    width: fit-content;
+}
+
 .line-consultoria {
+    width: fit-content;
     position: relative;
     font-weight: normal;
 }
 .line-consultoria::after {
     position: absolute;
     content: '';
-    width: 12%;
+    width: 150px;
     height: 7px;
-    right: 920px;
+    right: -30px;
     background-color: #9F1800;
     bottom: -5px;
 }
@@ -40,6 +46,14 @@
     text-decoration: none;
     color: black;
     cursor: pointer;
+}
+
+.consultoria-cruz {
+    display: none;
+}
+
+.mobile-consultoria {
+    display: none;
 }
 
 .lista-consultoria{
@@ -87,5 +101,62 @@
 @media only screen and (min-width: 651px) and (max-width: 1924px){
     .consultoria-titulo {
         text-transform:uppercase;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile-config-consultorias {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .links-consultoria li {
+        position: relative;
+        grid-column: 1 / 5;
+        margin: 0;
+        border-radius: 0;
+    }
+    .consultoria-cruz {
+        display: inherit;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+    }
+
+    .mobile-consultoria {
+        grid-column: 1 / 5;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-consultoria-activate {
+        height: 40px!important;
+        opacity: 1!important;
+    }
+
+    .mobile-consultoria p {
+        opacity: 0;
+        transition: all 400ms linear;
+        height: 0;
+        margin: 0 0 0 1rem;
+        grid-column: 1 / 5;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .consultoria {
+        padding: 0;
+    }
+
+    .links-consultoria {
+        margin: 0;
+        padding: 0;
     }
 }

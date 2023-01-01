@@ -22,12 +22,13 @@
 .line-taller::after {
     position: absolute;
     content: '';
-    width: 13%;
+    width: 150px;
     height: 7px;
-    right: 880px;
+    right: -30px;
     background-color: #9F1800;
     bottom: -5px;
 }
+
 .links-taller li{
     height: 75px;
     background-color: #F9EDCC;
@@ -72,7 +73,14 @@
 }
 
 @media screen and (max-width: 992px) {
-
+    .mobile-talleres-activate {
+        height: 100px!important;
+        opacity: 1!important;
+    }
+    .mobile-talleres-activate2 {
+        height: 40px!important;
+        opacity: 1!important;
+    }
 }
 
 @media screen and (max-width: 576px) {

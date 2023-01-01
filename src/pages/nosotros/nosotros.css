@@ -49,11 +49,12 @@
 
 @media screen and (max-width: 1920px) {
     .ocultar-md{
-        display: none;;
+        display: none;
     }
 }
 
 @media screen and (max-width: 576px) {
+
     .nosotros-titulo {
         text-transform:none;
         font-size: 28px;
@@ -62,6 +63,7 @@
     .line-nosotros::after {
         width: 30%;
         left: 40px;
+        background-color: #196B3C;
     }
     .ocultar-sm{
         display: none;

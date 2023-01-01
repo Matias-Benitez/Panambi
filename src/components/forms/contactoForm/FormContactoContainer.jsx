@@ -10,7 +10,7 @@ export const FormContactoContainer = () => {
 
     return (
         <>
-            <section className="container-forms">3
+            <section className="container-forms">
                 <FormTitle/>
                 <div className="form-contacto">
                     <FormContacto onInputChange={onInputChange}/>

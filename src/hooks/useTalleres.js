@@ -12,10 +12,20 @@ export const useTalleres = () => {
     const [tallerAmbiental, settallerAmbiental] = useState(false);
     const [tallerCambioClimatico, settallerCambioClimatico] = useState(false);
 
-    let tallerCanvasStyle = tallerCanvas && 'animated-item';
-    let tallerExcelStyle = tallerExcel && 'animated-item';
-    let tallerAmbientalStyle = tallerAmbiental && 'animated-item';
-    let tallerCambioClimaticoStyle = tallerCambioClimatico && 'animated-item';
+    let tallerCanvasStyle = tallerCanvas ? 'animated-item' : '';
+    let tallerExcelStyle = tallerExcel ? 'animated-item' : '';
+    let tallerAmbientalStyle = tallerAmbiental ? 'animated-item' : '';
+    let tallerCambioClimaticoStyle = tallerCambioClimatico ? 'animated-item' : '';
+
+    let tallerCanvasStyleMobile = tallerCanvas && 'mobile-talleres-activate';
+    let tallerExcelStyleMobile = tallerExcel && 'mobile-talleres-activate';
+    let tallerAmbientalStyleMobile = tallerAmbiental && 'mobile-talleres-activate';
+    let tallerCambioClimaticoStyleMobile = tallerCambioClimatico && 'mobile-talleres-activate';
+
+    let imageTallerCanvas = tallerCanvas ? 'src/assets/minus.png' : 'src/assets/más.png';
+    let imageTallerExcel = tallerExcel ? 'src/assets/minus.png' : 'src/assets/más.png';
+    let imageTallerAmbiental = tallerAmbiental ? 'src/assets/minus.png' : 'src/assets/más.png';
+    let imageMTallerCambioClimatico = tallerCambioClimatico ? 'src/assets/minus.png' : 'src/assets/más.png';
 
     const tallerCanvasSelected = () => {
         !tallerCanvas && settallerCanvas(true);
@@ -23,7 +33,6 @@ export const useTalleres = () => {
         tallerAmbiental && settallerAmbiental(false);
         tallerCambioClimatico && settallerCambioClimatico(false);
     }
-    
 
     const tallerExcelSelected = () => {
         tallerCanvas && settallerCanvas(false);
@@ -62,7 +71,15 @@ export const useTalleres = () => {
         tallerCanvasStyle,
         tallerExcelStyle,
         tallerAmbientalStyle,
-        tallerCambioClimaticoStyle
+        tallerCambioClimaticoStyle,
+        tallerCanvasStyleMobile,
+        tallerExcelStyleMobile,
+        tallerAmbientalStyleMobile,
+        tallerCambioClimaticoStyleMobile,
+        imageTallerCanvas,
+        imageTallerExcel,
+        imageTallerAmbiental,
+        imageMTallerCambioClimatico
     }
 }
 

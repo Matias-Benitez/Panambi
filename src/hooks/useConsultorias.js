@@ -18,6 +18,17 @@ export const useConsultorias = () => {
     let consultoriaMarketingStyle = consultoriaMarketing && 'animated-item';
     let consultoriaRecursosHumanosStyle = consultoriaRecursosHumanos && 'animated-item';
 
+    let consultoriaIntegralStyleMobile = consultoriaIntegral && 'mobile-consultoria-activate';
+    let consultoriaRSEStyleMobile = consultoriaRSE && 'mobile-consultoria-activate';
+    let consultoriaAmbientalStyleMobile = consultoriaAmbiental && 'mobile-consultoria-activate';
+    let consultoriaMarketingStyleMobile = consultoriaMarketing && 'mobile-consultoria-activate';
+    let consultoriaRecursosHumanosStyleMobile = consultoriaRecursosHumanos && 'mobile-consultoria-activate';
+
+    let imageIntegralSelected = consultoriaIntegral ? 'src/assets/minus.png' : 'src/assets/más.png';
+    let imageRSESSelected = consultoriaRSE ? 'src/assets/minus.png' : 'src/assets/más.png';
+    let imageAmbientalSelected = consultoriaAmbiental ? 'src/assets/minus.png' : 'src/assets/más.png';
+    let imageMarketingSelected = consultoriaMarketing ? 'src/assets/minus.png' : 'src/assets/más.png';
+    let imageRR = consultoriaRecursosHumanos ? 'src/assets/minus.png' : 'src/assets/más.png';
 
     const consultoriaIntegralSelected = () => {
         !consultoriaIntegral && setConsultoriaIntegral(true);
@@ -79,7 +90,19 @@ export const useConsultorias = () => {
         consultoriaRSEStyle,
         consultoriaAmbientalStyle,
         consultoriaMarketingStyle,
-        consultoriaRecursosHumanosStyle
+        consultoriaRecursosHumanosStyle,
+        consultoriaIntegralStyleMobile,
+        consultoriaRSEStyleMobile,
+        consultoriaAmbientalStyleMobile,
+        consultoriaMarketingStyleMobile,
+        consultoriaRecursosHumanosStyleMobile,
+        imageIntegralSelected,
+        imageRSESSelected,
+        imageAmbientalSelected,
+        imageMarketingSelected,
+        imageRR
+
+
     }
 }
 
