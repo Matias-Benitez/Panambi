@@ -44,33 +44,33 @@ export const Consultorias = () => {
                         <div className="col-xxl-4">
                             <ul className="links-consultoria">
                                 <div className="mobile-config-consultorias">
-                                    <li id={consultoriaIntegralStyle} onClick={consultoriaIntegralSelected}>Consultoría integral de gestión y administración
+                                    <li className="border-completo" id={consultoriaIntegralStyle} onClick={consultoriaIntegralSelected}>Consultoría integral de gestión y administración
                                         <ImgDynamic image={imageIntegralSelected}/>
                                     </li>
                                     <ConsultoriasDynamicMobile items={returnItems()} animation={consultoriaIntegralStyleMobile}/>
                                 </div>
 
                                 <div className="mobile-config-consultorias">
-                                    <li className="mobile-dropdown" id={consultoriaRSEStyle} onClick={consultoriaRSESelected}>Consultoría de RSE
+                                    <li className="mobile-dropdown border-incompleto" id={consultoriaRSEStyle} onClick={consultoriaRSESelected}>Consultoría de RSE
                                         <ImgDynamic image={imageRSESSelected}/>
                                     </li>
                                     <ConsultoriasDynamicMobile items={returnItems()} animation={consultoriaRSEStyleMobile}/>
                                 </div>
                                 <div className="mobile-config-consultorias">
-                                    <li className="mobile-dropdown" id={consultoriaAmbientalStyle} onClick={consultoriaAmbientalSelected}>Consultoría ambiental
+                                    <li className="mobile-dropdown border-incompleto" id={consultoriaAmbientalStyle} onClick={consultoriaAmbientalSelected}>Consultoría ambiental
                                         <ImgDynamic image={imageAmbientalSelected}/>
                                     </li>
                                     <ConsultoriasDynamicMobile items={returnItems()} animation={consultoriaAmbientalStyleMobile}/>
                                 </div>
                                 <div className="mobile-config-consultorias">
-                                    <li className="mobile-dropdown" id={consultoriaMarketingStyle} onClick={consultoriaMarketingSelected}>Consultoría de <span>Marketing digital</span>
+                                    <li className="mobile-dropdown border-incompleto-1" id={consultoriaMarketingStyle} onClick={consultoriaMarketingSelected}>Consultoría de <span>Marketing digital</span>
                                         <ImgDynamic image={imageMarketingSelected}/>
                                     </li>
                                     <ConsultoriasDynamicMobile items={returnItems()} animation={consultoriaMarketingStyleMobile}/>
 
                                 </div>
                                 <div className="mobile-config-consultorias">
-                                    <li className="mobile-dropdown" id={consultoriaRecursosHumanosStyle} onClick={consultoriaRecursosHumanosSelected}>Consultoría de RRHH
+                                    <li  className="mobile-dropdown border-completo" id={consultoriaRecursosHumanosStyle} onClick={consultoriaRecursosHumanosSelected}>Consultoría de RRHH
                                         <ImgDynamic image={imageRR}/>
                                     </li>
                                     <ConsultoriasDynamicMobile items={returnItems()} animation={consultoriaRecursosHumanosStyleMobile}/>

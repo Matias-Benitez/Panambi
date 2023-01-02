@@ -129,7 +129,8 @@
         top: 50%;
     }
 
-    .mobile-consultoria {
+    .mobile-consultoria {gi
+        border: 1px solid black;
         width: 100%;
         background-color: white;
         position: absolute;
@@ -149,6 +150,7 @@
     }
 
     .mobile-consultoria p {
+        padding: .5rem;
         margin: 0 0 0 1rem;
         grid-column: 1 / 5;
     }
