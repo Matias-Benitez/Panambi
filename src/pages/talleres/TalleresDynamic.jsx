@@ -1,6 +1,7 @@
 import './talleres.css'
 export const TalleresDynamic = ({items}) => {
     return (
+        items &&
         <>
             <h3 className="taller-subtitulo">{items[0].title}</h3>
             <div className='grid row'>
@@ -14,13 +15,12 @@ export const TalleresDynamic = ({items}) => {
                     <ul className="lista-taller">
                         {items.map((el, i) => {
                             return (
-                                i > 0 &&  <li key={i}>{el.item}</li>
+                                i > 0 &&  <li key={i}><span className="fw-bold">{el.title}</span> {el.item}</li>
                             )
                         })}
                      </ul>
                 </div>
             </div>
-            
         </>
     )
 }

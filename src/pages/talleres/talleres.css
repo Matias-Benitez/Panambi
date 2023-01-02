@@ -68,18 +68,75 @@
     right: 0px;
 }
 
+.mobile-talleres {
+    display: none;
+}
+
 @media screen and (max-width: 1400px) {
 
 }
 
 @media screen and (max-width: 992px) {
-    .mobile-talleres-activate {
-        height: 100px!important;
-        opacity: 1!important;
+    .desktop {
+        display: none;
     }
-    .mobile-talleres-activate2 {
-        height: 40px!important;
+
+    .mobile-config-talleres {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        position: relative;
+    }
+
+    .mobile-talleres {
+        border: 1px solid black;
+        background-color: white;
+        position: absolute;
+        transition: all 300ms linear;
+        grid-column: 1 / 5;
+        top: 0;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: -1;
+    }
+
+    .links-taller {
+        padding: 0;
+    }
+    .links-taller li {
+        color: #824737;
+        position: relative;
+        grid-column: 1 / 5;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .border-completo {
+        border: 2px solid #824737;
+    }
+
+    .border-incompleto {
+        border-left: 2px solid #824737;
+        border-right: 2px solid #824737;
+        border-bottom: 2px solid #824737;
+    }
+
+    .border-incompleto-1 {
+        border-left: 2px solid #824737;
+        border-right: 2px solid #824737;
+    }
+
+
+    .mobile-talleres-activate {
+        top: 100%!important;
         opacity: 1!important;
+        z-index: 1;
+    }
+
+    .mobile-talleres p {
+        padding: .5rem;
+        margin: 0 0 0 1rem;
+        grid-column: 1 / 5;
     }
 }
 

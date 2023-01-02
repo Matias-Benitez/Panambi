@@ -38,27 +38,27 @@ export const Talleres = () => {
                 <div className="container container-taller">
                     <div className="row">
                         <div className="col-xxl-4">
-                            <ul className="links-taller links-consultoria">
-                                <div className="mobile-config-consultorias">
-                                  <li id={tallerCanvasStyle} onClick={tallerCanvasSelected}>Taller: Modelo de negocios CANVAS.
+                            <ul className="links-taller">
+                                <div className="mobile-config-talleres">
+                                  <li className="border-completo" id={tallerCanvasStyle} onClick={tallerCanvasSelected}>Modelo de negocios <span>CANVAS.</span>
                                       <ImgDynamic image={imageTallerCanvas}/>
                                   </li>
                                     <TalleresDynamicMobile items={returnItems()} animation={tallerCanvasStyleMobile}/>
                                 </div>
-                                <div className="mobile-config-consultorias">
-                                   <li id={tallerExcelStyle} onClick={tallerExcelSelected}>Excel para principiantes
+                                <div className="mobile-config-talleres">
+                                   <li className="border-incompleto" id={tallerExcelStyle} onClick={tallerExcelSelected}>Excel para principiantes
                                        <ImgDynamic image={imageTallerExcel}/>
                                    </li>
                                     <TalleresDynamicMobile items={returnItems()} animation={tallerExcelStyleMobile}/>
                                 </div>
-                                <div className="mobile-config-consultorias">
-                                   <li id={tallerAmbientalStyle} onClick={tallerAmbientalSelected}>Formación ambiental para Agentes Municipales
+                                <div className="mobile-config-talleres">
+                                   <li className="border-incompleto-1" id={tallerAmbientalStyle} onClick={tallerAmbientalSelected}>Formación ambiental para Agentes Municipales
                                        <ImgDynamic image={imageTallerAmbiental}/>
                                    </li>
                                     <TalleresDynamicMobile items={returnItems()} animation={tallerAmbientalStyleMobile}/>
                                 </div>
-                                <div className="mobile-config-consultorias">
-                                    <li id={tallerCambioClimaticoStyle} onClick={tallerCambioClimaticoSelected}>Introducción al Cambio Climático
+                                <div className="mobile-config-talleres">
+                                    <li className="border-completo" id={tallerCambioClimaticoStyle} onClick={tallerCambioClimaticoSelected}>Introducción al <span>Cambio Climático</span>
                                         <ImgDynamic image={imageMTallerCambioClimatico}/>
                                     </li>
                                     <TalleresDynamicMobile items={returnItems()} animation={tallerCambioClimaticoStyleMobile}/>

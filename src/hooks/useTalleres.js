@@ -28,7 +28,7 @@ export const useTalleres = () => {
     let imageMTallerCambioClimatico = tallerCambioClimatico ? 'src/assets/minus.png' : 'src/assets/más.png';
 
     const tallerCanvasSelected = () => {
-        !tallerCanvas && settallerCanvas(true);
+        settallerCanvas(!tallerCanvas);
         tallerExcel && settallerExcel(false);
         tallerAmbiental && settallerAmbiental(false);
         tallerCambioClimatico && settallerCambioClimatico(false);
@@ -36,7 +36,7 @@ export const useTalleres = () => {
 
     const tallerExcelSelected = () => {
         tallerCanvas && settallerCanvas(false);
-        !tallerExcel && settallerExcel(true);
+        settallerExcel(!tallerExcel);
         tallerAmbiental && settallerAmbiental(false);
         tallerCambioClimatico && settallerCambioClimatico(false);
     }
@@ -44,7 +44,7 @@ export const useTalleres = () => {
     const tallerAmbientalSelected = () => {
         tallerExcel && settallerExcel(false);
         tallerCanvas && settallerCanvas(false);
-        !tallerAmbiental && settallerAmbiental(true);
+        settallerAmbiental(!tallerAmbiental);
         tallerCambioClimatico && settallerCambioClimatico(false);
     }
 
@@ -52,7 +52,7 @@ export const useTalleres = () => {
         tallerExcel && settallerExcel(false);
         tallerCanvas && settallerCanvas(false);
         tallerAmbiental && settallerAmbiental(false);
-        !tallerCambioClimatico && settallerCambioClimatico(true);
+        settallerCambioClimatico(!tallerCambioClimatico);
     }
 
     const returnItems = () => {

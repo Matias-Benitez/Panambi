@@ -12,11 +12,11 @@ export const useConsultorias = () => {
     const [consultoriaMarketing, setConsultoriaMarketing] = useState(false);
     const [consultoriaRecursosHumanos, setConsultoriaRecursosHumanos] = useState(false);
 
-    let consultoriaIntegralStyle = consultoriaIntegral && 'animated-item';
-    let consultoriaRSEStyle = consultoriaRSE && 'animated-item';
-    let consultoriaAmbientalStyle = consultoriaAmbiental && 'animated-item';
-    let consultoriaMarketingStyle = consultoriaMarketing && 'animated-item';
-    let consultoriaRecursosHumanosStyle = consultoriaRecursosHumanos && 'animated-item';
+    let consultoriaIntegralStyle = consultoriaIntegral ? 'animated-item' : '';
+    let consultoriaRSEStyle = consultoriaRSE ? 'animated-item' : '';
+    let consultoriaAmbientalStyle = consultoriaAmbiental ? 'animated-item' : '';
+    let consultoriaMarketingStyle = consultoriaMarketing ? 'animated-item' : '';
+    let consultoriaRecursosHumanosStyle = consultoriaRecursosHumanos ? 'animated-item' : '';
 
     let consultoriaIntegralStyleMobile = consultoriaIntegral && 'mobile-consultoria-activate';
     let consultoriaRSEStyleMobile = consultoriaRSE && 'mobile-consultoria-activate';
@@ -31,7 +31,7 @@ export const useConsultorias = () => {
     let imageRR = consultoriaRecursosHumanos ? 'src/assets/minus.png' : 'src/assets/más.png';
 
     const consultoriaIntegralSelected = () => {
-        !consultoriaIntegral && setConsultoriaIntegral(true);
+        setConsultoriaIntegral(!consultoriaIntegral);
         consultoriaRSE && setConsultoriaRSE(false);
         consultoriaAmbiental && setConsultoriaAmbiental(false);
         consultoriaMarketing && setConsultoriaMarketing(false);
@@ -40,7 +40,7 @@ export const useConsultorias = () => {
 
     const consultoriaRSESelected = () => {
         consultoriaIntegral && setConsultoriaIntegral(false);
-        !consultoriaRSE && setConsultoriaRSE(true);
+        setConsultoriaRSE(!consultoriaRSE);
         consultoriaAmbiental && setConsultoriaAmbiental(false);
         consultoriaMarketing && setConsultoriaMarketing(false);
         consultoriaRecursosHumanos && setConsultoriaRecursosHumanos(false);
@@ -50,7 +50,7 @@ export const useConsultorias = () => {
     const consultoriaAmbientalSelected = () => {
         consultoriaIntegral && setConsultoriaIntegral(false);
         consultoriaRSE && setConsultoriaRSE(false);
-        !consultoriaAmbiental && setConsultoriaAmbiental(true);
+        setConsultoriaAmbiental(!consultoriaAmbiental);
         consultoriaMarketing && setConsultoriaMarketing(false);
         consultoriaRecursosHumanos && setConsultoriaRecursosHumanos(false);
     }
@@ -59,7 +59,7 @@ export const useConsultorias = () => {
         consultoriaIntegral && setConsultoriaIntegral(false);
         consultoriaRSE && setConsultoriaRSE(false);
         consultoriaAmbiental && setConsultoriaAmbiental(false);
-        !consultoriaMarketing && setConsultoriaMarketing(true);
+        setConsultoriaMarketing(!consultoriaMarketing);
         consultoriaRecursosHumanos && setConsultoriaRecursosHumanos(false);
     }
 
@@ -68,7 +68,7 @@ export const useConsultorias = () => {
         consultoriaRSE && setConsultoriaRSE(false);
         consultoriaAmbiental && setConsultoriaAmbiental(false);
         consultoriaMarketing && setConsultoriaMarketing(false);
-        !consultoriaRecursosHumanos && setConsultoriaRecursosHumanos(true);
+        setConsultoriaRecursosHumanos(!consultoriaRecursosHumanos);
     }
 
     const returnItems = () => {

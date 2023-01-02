@@ -110,6 +110,7 @@
     }
 
     .mobile-config-consultorias {
+        position: relative;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
@@ -120,6 +121,7 @@
         margin: 0;
         border-radius: 0;
     }
+
     .consultoria-cruz {
         display: inherit;
         position: absolute;
@@ -128,24 +130,27 @@
     }
 
     .mobile-consultoria {
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        transition: all 300ms linear;
         grid-column: 1 / 5;
+        top: 0;
+        opacity: 0;
         display: flex;
         flex-direction: column;
+        z-index: -1;
     }
 
     .mobile-consultoria-activate {
-        height: 40px!important;
+        top: 100%!important;
         opacity: 1!important;
+        z-index: 1;
     }
 
     .mobile-consultoria p {
-        opacity: 0;
-        transition: all 400ms linear;
-        height: 0;
         margin: 0 0 0 1rem;
         grid-column: 1 / 5;
-        display: flex;
-        flex-direction: column;
     }
 }
 
