@@ -73,7 +73,7 @@ export const Nosotros = () => {
                     </div>
                 </div>
             </div>
-            <div className="ocultar-sm"><FormContainer /></div>
+            <div><FormContainer /></div>
         </section>
     )
 }

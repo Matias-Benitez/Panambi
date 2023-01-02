@@ -1,3 +1,5 @@
+import './talleres.css'
+
 export const TalleresDynamicMobile = ({items, animation}) => {
     return (
         <>
