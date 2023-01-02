@@ -158,6 +158,12 @@
 
 @media screen and (max-width: 576px) {
 
+    .line-consultoria::after {
+        width: 100px;
+        left: 60%;
+        background-color: #196B3C;
+    }
+
     .consultoria {
         padding: 0;
     }
