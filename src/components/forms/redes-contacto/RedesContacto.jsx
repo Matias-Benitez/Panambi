@@ -21,7 +21,7 @@ export const RedesContacto = () => {
                 <img src={Telefono} alt="Telefono"/>
                 <p>+549 2216126831</p>
             </div>
-            <div><p><span>Encontrarnos</span>
+            <div><p><span>Encontranos</span>
                 <span>en las redes!</span></p>
             </div>
             <div className="redes-sociales">
