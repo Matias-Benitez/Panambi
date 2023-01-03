@@ -34,7 +34,7 @@ export const Consultorias = () => {
 
     return (
         <section>
-            <div className="consultoria">
+            <div className="consultoria" id="test-consultoria">
                 <div className="container container-consultoria">
                     <div className="div-line"> <h2 className="consultoria-titulo line-consultoria">Consultorías</h2></div>
                     <h3 className="consultoria-subtitulo">Ofrecemos asesoramiento y acompañamiento profesional en el desarrollo de tu negocio.</h3>

@@ -6,6 +6,10 @@
     padding: 0 1.5% 0 1.5%;
 }
 
+.container-header img {
+    cursor: pointer;
+}
+
 /* Propiedades compartidas */
 .container-header div {
     height: 70px;

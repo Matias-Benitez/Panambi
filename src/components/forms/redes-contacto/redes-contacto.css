@@ -17,12 +17,9 @@
 .redes-contacto-container div p {
     padding-top: 12px;
     padding-left: 1rem;
+    text-align: center
 }
 
-.redes-contacto-container div p span {
-    padding-left: 2rem;
-    display: block;
-}
 
 .redes-sociales {
     display: flex;

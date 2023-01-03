@@ -6,13 +6,13 @@ import MenuHamburguesa from '../../assets/menu-hamburguesa.png';
 
 export const NavBar = () => {
 
-    const { animationNav, handleNavBar } = useNavBar();
+    const { animationNav, handleNavBar, handleNavigate } = useNavBar();
 
     return (
         <header className="container-header">
             <div className="header-left">
                 <img onClick={handleNavBar} id="menu-hamburguesa" src={MenuHamburguesa} alt="menu-hamburguesa"/>
-                <img className="logo-navbar" src={NavBarLogo} alt="Panambi Logo"/>
+                <img onClick={handleNavigate} className="logo-navbar" src={NavBarLogo} alt="Panambi Logo"/>
             </div>
             <div className="header-right">
                 <nav className={animationNav}>

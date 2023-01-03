@@ -9,6 +9,10 @@
     color: #9C6A53;
 }
 
+.servicios-card-container a {
+    color: #9C6A53;
+}
+
 .servicios-card-subcontainer {
     height: 100%;
     border-radius: 50px;

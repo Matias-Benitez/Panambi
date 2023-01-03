@@ -1,9 +1,12 @@
 import './card-service.css'
+import {Link} from "react-router-dom";
 
-export const CardService = ({imagenUrl, titulo, descripcion}) => {
+export const CardService = ({imagenUrl, titulo, descripcion, navigatePath}) => {
+
+
     return (
         <div className="servicios-card-container">
-            <div className="servicios-card-subcontainer">
+            <Link to={navigatePath}><div className="servicios-card-subcontainer">
                 <div className="servicios-card-logo">
                     <img src={imagenUrl} alt="card-logo"/>
                 </div>
@@ -15,7 +18,7 @@ export const CardService = ({imagenUrl, titulo, descripcion}) => {
                         <p>{descripcion}</p>
                     </div>
                 </div>
-            </div>
+            </div></Link>
         </div>
     )
 
