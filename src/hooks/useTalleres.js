@@ -9,10 +9,11 @@ import imageMenos from '../assets/minus.png';
 
 
 export const useTalleres = () => {
-    const [tallerCanvas, settallerCanvas] = useState(true);
-    const [tallerExcel, settallerExcel] = useState(false);
-    const [tallerAmbiental, settallerAmbiental] = useState(false);
-    const [tallerCambioClimatico, settallerCambioClimatico] = useState(false);
+    const state = window.innerWidth > 992 ? true : false
+    const [tallerCanvas, settallerCanvas] = useState(state);
+    const [tallerExcel, settallerExcel] = useState(state);
+    const [tallerAmbiental, settallerAmbiental] = useState(state);
+    const [tallerCambioClimatico, settallerCambioClimatico] = useState(state);
 
     let tallerCanvasStyle = tallerCanvas ? 'animated-item' : '';
     let tallerExcelStyle = tallerExcel ? 'animated-item' : '';
