@@ -4,6 +4,8 @@ import {
     consultoriaRecursosHumanosItems, consultoriaRSEItems
 } from "../pages/consultorias/ConsultoriasItems.js";
 import {useState} from "react";
+import imageMas from '../assets/más.png';
+import imageMenos from '../assets/minus.png';
 
 export const useConsultorias = () => {
     const [consultoriaIntegral, setConsultoriaIntegral] = useState(true);
@@ -24,11 +26,11 @@ export const useConsultorias = () => {
     let consultoriaMarketingStyleMobile = consultoriaMarketing && 'mobile-consultoria-activate';
     let consultoriaRecursosHumanosStyleMobile = consultoriaRecursosHumanos && 'mobile-consultoria-activate';
 
-    let imageIntegralSelected = consultoriaIntegral ? 'src/assets/minus.png' : 'src/assets/más.png';
-    let imageRSESSelected = consultoriaRSE ? 'src/assets/minus.png' : 'src/assets/más.png';
-    let imageAmbientalSelected = consultoriaAmbiental ? 'src/assets/minus.png' : 'src/assets/más.png';
-    let imageMarketingSelected = consultoriaMarketing ? 'src/assets/minus.png' : 'src/assets/más.png';
-    let imageRR = consultoriaRecursosHumanos ? 'src/assets/minus.png' : 'src/assets/más.png';
+    let imageIntegralSelected = consultoriaIntegral ? imageMenos : imageMas;
+    let imageRSESSelected = consultoriaRSE ? imageMenos : imageMas;
+    let imageAmbientalSelected = consultoriaAmbiental ? imageMenos : imageMas;
+    let imageMarketingSelected = consultoriaMarketing ? imageMenos : imageMas;
+    let imageRR = consultoriaRecursosHumanos ? imageMenos : imageMas;
 
     const consultoriaIntegralSelected = () => {
         setConsultoriaIntegral(!consultoriaIntegral);

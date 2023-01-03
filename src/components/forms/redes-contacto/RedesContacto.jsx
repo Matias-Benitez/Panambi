@@ -27,7 +27,7 @@ export const RedesContacto = () => {
             <div className="redes-sociales">
                 <a target="_blank" href="https://www.linkedin.com/in/panambi-consultor%C3%ADa-de-empresas/"><img src={Linkedin} alt="Linkedin"/></a>
                 <a target="_blank" href="https://www.instagram.com/panambi.consultoriasustentable/"><img src={Instagram} alt="Instagram"/></a>
-                <a target="_blank"  href="https://wa.link/m7r6zx"><img src="src/assets/LogoWP.png" alt={WhatsApp}/></a>
+                <a target="_blank"  href="https://wa.link/m7r6zx"><img src={WhatsApp} alt="WhatsApp"/></a>
             </div>
         </div>
     )
