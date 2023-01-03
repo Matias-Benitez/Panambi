@@ -41,7 +41,7 @@ export const Consultorias = () => {
                 </div>
                 <div className="container container-consultoria">
                     <div className="row">
-                        <div className="col-xxl-4">
+                        <div className="col-lg-4">
                             <ul className="links-consultoria">
                                 <div className="mobile-config-consultorias">
                                     <li className="border-completo" id={consultoriaIntegralStyle} onClick={consultoriaIntegralSelected}>Consultoría integral de gestión y administración
@@ -77,7 +77,7 @@ export const Consultorias = () => {
                                 </div>
                             </ul>
                         </div>
-                        <div className="col-xxl-8 desktop">
+                        <div className="col-lg-8 desktop">
                             <ConsultoriasDynamicDesktop items={returnItems()}/>
                             <Button/>
                         </div>
