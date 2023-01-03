@@ -1,5 +1,7 @@
 import './layout_2.css'
 import {CardService} from "./Card-Service";
+import imageConsultoria from '../../../assets/consultoría.png'
+import imageTaller from '../../../assets/taller.png'
 
 export const InicioLayout_2 = () => {
     return (
@@ -14,8 +16,8 @@ export const InicioLayout_2 = () => {
                 </div>
             </div>
             <div className="cardService-container">
-                <CardService imagenUrl={'src/assets/consultoría.png'} titulo={'Consultorías'} descripcion={'Gestioná eficientemente tu empresa'}/>
-                <CardService imagenUrl={'src/assets/taller.png'} titulo={'Capacitaciones'} descripcion={'Adquirí herramientas para impulsar tu negocio'}/>
+                <CardService imagenUrl={imageConsultoria} titulo={'Consultorías'} descripcion={'Gestioná eficientemente tu empresa'}/>
+                <CardService imagenUrl={imageTaller} titulo={'Capacitaciones'} descripcion={'Adquirí herramientas para impulsar tu negocio'}/>
             </div>
         </section>
     )
