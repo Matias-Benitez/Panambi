@@ -37,10 +37,10 @@ export const Talleres = () => {
                 </div>
                 <div className="container container-taller">
                     <div className="row">
-                        <div className="col-xxl-4">
+                        <div className="col-lg-4">
                             <ul className="links-taller">
                                 <div className="mobile-config-talleres">
-                                  <li className="border-completo" id={tallerCanvasStyle} onClick={tallerCanvasSelected}>Modelo de negocios <span>CANVAS.</span>
+                                  <li className="border-completo " id={tallerCanvasStyle} onClick={tallerCanvasSelected}>Modelo de negocios <span>CANVAS.</span>
                                       <ImgDynamic image={imageTallerCanvas}/>
                                   </li>
                                     <TalleresDynamicMobile items={returnItems()} animation={tallerCanvasStyleMobile}/>
@@ -65,7 +65,7 @@ export const Talleres = () => {
                                 </div>
                             </ul>
                         </div>
-                        <div className="col-8 desktop">
+                        <div className="col-lg-8 desktop">
                             <TalleresDynamic items={returnItems()}/>
                         </div>
                         <div className="boton-taller"><Button/></div>
