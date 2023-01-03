@@ -1,9 +1,10 @@
 import './layout_1.css'
+import HomeFondo from '../../../assets/HomeFondo.png'
 
 export const InicioLayout_1 = () => {
     return (
         <>
-            <section className="container-inicio-layout-1">
+            <section style={{backgroundImage: `url(${HomeFondo})`}} className="container-inicio-layout-1">
                 <div className="inicio-a">
                     <div className="inicio-a-title">
                         <h1>Somos Panambí</h1></div>
