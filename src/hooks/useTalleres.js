@@ -3,6 +3,8 @@ import {
     tallerAmbientalItems, tallerCambioClimaticoItems
 } from "../pages/talleres/TalleresItems.js";
 import {useState} from "react";
+import imageMas from '../assets/más.png';
+import imageMenos from '../assets/minus.png';
 
 
 
@@ -22,10 +24,10 @@ export const useTalleres = () => {
     let tallerAmbientalStyleMobile = tallerAmbiental && 'mobile-talleres-activate';
     let tallerCambioClimaticoStyleMobile = tallerCambioClimatico && 'mobile-talleres-activate';
 
-    let imageTallerCanvas = tallerCanvas ? 'src/assets/minus.png' : 'src/assets/más.png';
-    let imageTallerExcel = tallerExcel ? 'src/assets/minus.png' : 'src/assets/más.png';
-    let imageTallerAmbiental = tallerAmbiental ? 'src/assets/minus.png' : 'src/assets/más.png';
-    let imageMTallerCambioClimatico = tallerCambioClimatico ? 'src/assets/minus.png' : 'src/assets/más.png';
+    let imageTallerCanvas = tallerCanvas ? imageMenos : imageMas;
+    let imageTallerExcel = tallerExcel ? imageMenos : imageMas;
+    let imageTallerAmbiental = tallerAmbiental ? imageMenos : imageMas;
+    let imageMTallerCambioClimatico = tallerCambioClimatico ? imageMenos : imageMas;
 
     const tallerCanvasSelected = () => {
         settallerCanvas(!tallerCanvas);

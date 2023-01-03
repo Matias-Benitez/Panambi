@@ -2,6 +2,7 @@ import './navBar.css';
 import { NavItems } from "./NavItems.jsx";
 import { useNavBar } from "../../hooks/useNavBar.js";
 import NavBarLogo from '../../assets/Logo+horizontal-recortado.png'
+import MenuHamburguesa from '../../assets/menu-hamburguesa.png';
 
 export const NavBar = () => {
 
@@ -10,7 +11,7 @@ export const NavBar = () => {
     return (
         <header className="container-header">
             <div className="header-left">
-                <img onClick={handleNavBar} id="menu-hamburguesa" src="src/assets/menu-hamburguesa.png" alt="menu-hamburguesa"/>
+                <img onClick={handleNavBar} id="menu-hamburguesa" src={MenuHamburguesa} alt="menu-hamburguesa"/>
                 <img className="logo-navbar" src={NavBarLogo} alt="Panambi Logo"/>
             </div>
             <div className="header-right">
