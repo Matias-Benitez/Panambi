@@ -10,10 +10,10 @@ import imageMenos from '../assets/minus.png';
 export const useConsultorias = () => {
     const state = window.innerWidth > 992 ? true : false
     const [consultoriaIntegral, setConsultoriaIntegral] = useState(state);
-    const [consultoriaRSE, setConsultoriaRSE] = useState(state);
-    const [consultoriaAmbiental, setConsultoriaAmbiental] = useState(state);
-    const [consultoriaMarketing, setConsultoriaMarketing] = useState(state);
-    const [consultoriaRecursosHumanos, setConsultoriaRecursosHumanos] = useState(state);
+    const [consultoriaRSE, setConsultoriaRSE] = useState(false);
+    const [consultoriaAmbiental, setConsultoriaAmbiental] = useState(false);
+    const [consultoriaMarketing, setConsultoriaMarketing] = useState(false);
+    const [consultoriaRecursosHumanos, setConsultoriaRecursosHumanos] = useState(false);
 
     let consultoriaIntegralStyle = consultoriaIntegral ? 'animated-item' : '';
     let consultoriaRSEStyle = consultoriaRSE ? 'animated-item' : '';
