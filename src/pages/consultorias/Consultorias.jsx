@@ -5,6 +5,7 @@ import {ConsultoriasDynamicDesktop} from "./ConsultoriasDynamicDesktop.jsx";
 import {useConsultorias} from '../../hooks/useConsultorias.js';
 import {ImgDynamic} from "../../components/imgDymanic/ImgDynamic.jsx";
 import {ConsultoriasDynamicMobile} from "./ConsultoriasDynamicMobile.jsx";
+import {useEffect} from "react";
 
 export const Consultorias = () => {
     const {
@@ -31,6 +32,10 @@ export const Consultorias = () => {
         imageRSESSelected,
 
     } = useConsultorias()
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <section>

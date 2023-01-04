@@ -5,6 +5,7 @@ import {TalleresDynamic} from "./TalleresDynamic.jsx";
 import {useTalleres} from '../../hooks/useTalleres.js';
 import {ImgDynamic} from "../../components/imgDymanic/ImgDynamic.jsx";
 import {TalleresDynamicMobile} from "./TalleresDynamicMobile";
+import {useEffect} from "react";
 
 
 export const Talleres = () => {
@@ -27,6 +28,10 @@ export const Talleres = () => {
         tallerCanvasStyleMobile,
         tallerExcelStyleMobile
     } = useTalleres()
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <section>
