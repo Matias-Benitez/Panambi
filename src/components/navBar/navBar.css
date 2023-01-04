@@ -1,4 +1,7 @@
 .container-header {
+    z-index: 5;
+    width: 100%;
+    position: fixed;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     background-color: #824737;

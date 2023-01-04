@@ -1,5 +1,6 @@
 .taller {
     padding-bottom: 105px;
+    margin-top: 6rem;
 }
 .container-taller {
     margin: 50px auto;
@@ -102,6 +103,7 @@
     }
     .taller-subtitulo {
         font-size: 20px;
+        color: black;
     }
     .line-taller {
         position: relative;

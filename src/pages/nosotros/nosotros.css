@@ -1,5 +1,5 @@
 .container-nosotros {
-    margin: 50px auto;
+    margin: 7rem 50px 0 auto;
 }
 .nosotros-titulo {
     font-size: 48px;
@@ -54,6 +54,9 @@
 }
 
 @media screen and (max-width: 576px) {
+    .container-nosotros {
+        margin: 5rem 50px 0 auto;
+    }
 
     .nosotros-titulo {
         text-transform:none;

@@ -16,8 +16,12 @@ export const InicioLayout_2 = () => {
                 </div>
             </div>
             <div className="cardService-container">
-                <CardService imagenUrl={imageConsultoria} titulo={'Consultorías'} descripcion={'Gestioná eficientemente tu empresa'} navigatePath={'/consultoria'}/>
-                <CardService imagenUrl={imageTaller} titulo={'Capacitaciones'} descripcion={'Adquirí herramientas para impulsar tu negocio'} navigatePath={'/capacitaciones'} />
+                <CardService imagenUrl={imageConsultoria} titulo={'Consultorías'} descripcion={'Gestioná eficientemente tu empresa'} navigatePath={'/consultoria'}
+                             animationDescription={'Ofrecemos distintos tipos de consultorías para ayudarte a gestionar tu empresa o emprendimiento adaptándonos a tus necesidades.'}
+                />
+                <CardService imagenUrl={imageTaller} titulo={'Capacitaciones'} descripcion={'Adquirí herramientas para impulsar tu negocio'} navigatePath={'/capacitaciones'}
+                            animationDescription={'Brindamos talleres para que puedas aprender sobre distintas herramientas que te ayudarán a potenciar tu negocio.'}
+                />
             </div>
         </section>
     )

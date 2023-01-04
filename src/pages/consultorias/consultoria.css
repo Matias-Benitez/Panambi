@@ -1,4 +1,5 @@
 .consultoria {
+    margin-top: 6rem;
     padding-bottom: 155px;
 }
 .container-consultoria {
@@ -70,15 +71,6 @@
     color: #F9EDCC;
 }
 
-@media screen and (max-width: 1400px) {
-
-}
-
-@media screen and (max-width: 576px) {
-    
-}
-
-
 @media only screen and (max-width: 650px){
     .consultoria-titulo {
         font-size: 28px;
@@ -105,12 +97,17 @@
         display: none;
     }
     .consultoria-subtitulo {
+        color: black;
         font-size: 20px;
     }
     .mobile-config-consultorias {
         position: relative;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .links-consultoria {
+        padding: 0;
     }
 
     .links-consultoria li {

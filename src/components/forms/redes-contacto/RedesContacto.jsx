@@ -21,9 +21,7 @@ export const RedesContacto = () => {
                 <img src={Telefono} alt="Telefono"/>
                 <p>+549 2216126831</p>
             </div>
-            <div><p><span>¡Encontranos</span>
-                <span> en las redes!</span></p>
-            </div>
+            <div><p>¡Encontranos en las redes!</p></div>
             <div className="redes-sociales">
                 <a target="_blank" href="https://www.linkedin.com/in/panambi-consultor%C3%ADa-de-empresas/"><img src={Linkedin} alt="Linkedin"/></a>
                 <a target="_blank" href="https://www.instagram.com/panambi.consultoriasustentable/"><img src={Instagram} alt="Instagram"/></a>

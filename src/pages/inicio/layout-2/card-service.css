@@ -1,4 +1,5 @@
 .servicios-card-container {
+    position:relative;
     margin: 30px;
     padding: 10px;
     border-radius: 50px;
@@ -14,10 +15,27 @@
 }
 
 .servicios-card-subcontainer {
+    position: relative;
     height: 100%;
     border-radius: 50px;
     border: 2px solid white;
 }
+
+.animation-card-inicio {
+    position: absolute;
+    background-color: #F9EDCC;
+    opacity: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: all 200ms linear;
+}
+
+.animation-card-inicio:hover {
+    opacity: 1;
+}
+
 
 .servicios-card-logo {
     width: 100%;
@@ -43,7 +61,11 @@
     text-align: center;
 }
 
+
 @media screen and (max-width: 576px) {
+    .animation-card-inicio {
+        display: none;
+    }
     .servicios-card-container {
         margin: .5rem 0 1rem 0;
         max-width: 400px;
