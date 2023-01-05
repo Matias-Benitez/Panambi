@@ -176,13 +176,15 @@
 
     .header-right nav ul li {
         width: 100%;
+        display: flex;
+        justify-content: flex-start;
     }
 
     .header-right nav ul li a {
+        width: fit-content;
         font-weight: 600;
         padding-left: 1rem;
-        display: flex;
-        justify-content: flex-start;
+
     }
 }
 
