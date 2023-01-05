@@ -6,6 +6,12 @@ export const useNavBar = () => {
     const navigate = useNavigate();
 
     const handleNavBar = () => {
+        if(!isActive) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = "auto";
+        }
+
         setIsActive(!isActive)
     }
 

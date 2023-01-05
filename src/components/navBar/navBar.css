@@ -85,6 +85,9 @@
 }
 
 @media screen and (max-width: 992px) {
+    .header-right nav ul li a::after {
+        display: none;
+    }
     /* Propiedades compartidas */
     .container-header div {
         height: 70px;
